@@ -1,0 +1,10 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"script",
+	"author":	"Alex Anderson",
+	"description":	{
+		"":	"Renames all sketch text items with specific name"
+	},
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
