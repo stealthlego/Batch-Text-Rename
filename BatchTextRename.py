@@ -26,8 +26,9 @@ def rename():
     for comp in childComps:
         for sketch in comp.sketches:
             sketchList.append(sketch)
-
-    ui.messageBox(str(len(sketchList)))
+    
+    #DEBUGGING
+    #ui.messageBox(str(len(sketchList)))
 
     #gets all sketchTexts
     for sketch in sketchList:
@@ -35,8 +36,8 @@ def rename():
             tempSketchTexts = sketch.sketchTexts
             for text in tempSketchTexts:
                 sketchTextList.append(text)
-
-    ui.messageBox(str(len(sketchTextList)))
+    #DEBUGGING
+    #ui.messageBox(str(len(sketchTextList)))
             
     for sketchText in sketchTextList:
         if _keyword[0] in sketchText.text:
@@ -55,5 +56,5 @@ def run(context):
             ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
 
 #prevents code from running when imported into other plugins/scripts
-#if __name__ == '__main__':
-    #run()
+if __name__ == '__main__':
+    run()
